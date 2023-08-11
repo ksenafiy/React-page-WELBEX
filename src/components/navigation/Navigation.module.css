@@ -1,0 +1,139 @@
+.navigation {
+  padding: 55px 15px 33px 15px;
+  display: grid;
+  grid-template-areas: "col1 col2 col3 col4";
+  grid-template-columns: 25.74% 17% 19.5% 37.5%;
+}
+
+.navigation__item h3 {
+  font-weight: 700;
+  font-size: 14px;
+  color: #656566;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin: 0 0 20px 0;
+}
+.h3Transparent {
+  opacity: 0;
+}
+
+.navigation__item a {
+  font-size: 16px;
+}
+
+.item__link:not(:last-child) {
+  margin: 0 0 10px 0;
+}
+
+.navigation__icons {
+  display: flex;
+  margin: 0 0 19px 0;
+}
+
+.navigation__icons a:not(:last-child) {
+  margin: 0 10px 0 0;
+}
+
+.phone {
+  margin: 0 0 21px 0;
+}
+
+.col4 a {
+  text-align: right;
+}
+
+.col4 h3 {
+  text-align: right;
+}
+
+.col4 .navigation__icons {
+  justify-content: flex-end;
+}
+
+.col1 {
+  grid-area: col1;
+}
+
+.col2 {
+  grid-area: col2;
+}
+
+.col3 {
+  grid-area: col3;
+}
+
+.col4 {
+  grid-area: col4;
+  justify-self: end;
+}
+
+/*----------------media------------------------*/
+
+@media (max-width: 1000px) {
+  .navigation {
+    grid-template-areas:
+      "col1 col1"
+      "col2 col3"
+      "col4 col4";
+    grid-template-columns: 120px 120px;
+    grid-row-gap: 30px;
+    grid-column-gap: 48px;
+    padding: 55px 15px 50px 15px;
+  }
+  .col4 h3 {
+    text-align: left;
+  }
+  .col4 a {
+    text-align: left;
+  }
+  .navigation__icons {
+    justify-content: start;
+  }
+  .col4 {
+    justify-self: self-start;
+  }
+  .col4 .navigation__icons {
+    justify-content: flex-start;
+  }
+  .link__replace1 {
+    visibility: hidden;
+    position: relative;
+  }
+  .link__replace1::after {
+    content: "Благодарность клиентов";
+    visibility: visible;
+    display: block;
+    position: absolute;
+    top: 0;
+  }
+  .link__replace2 {
+    visibility: hidden;
+    position: relative;
+  }
+  .link__replace2::after {
+    content: "Кейсы";
+    visibility: visible;
+    display: inline-block;
+    position: absolute;
+    left: 0;
+  }
+}
+
+@media (max-width: 420px) {
+  .navigation {
+    padding-top: 45px;
+    background-color: #0e1014;
+  }
+  .navigation__item h3 {
+    font-size: 12px;
+  }
+  .navigation__item a {
+    font-size: 14px;
+  }
+  .phone {
+    margin: 0 0 8px 0;
+  }
+  .navigation__icons {
+    margin: 0 0 10px 0;
+  }
+}

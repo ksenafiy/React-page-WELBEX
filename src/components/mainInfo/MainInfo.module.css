@@ -1,0 +1,213 @@
+.mainInfo__inner {
+  display: flex;
+  justify-content: space-between;
+  padding: 90px 15px 69px 15px;
+}
+
+.slogan {
+  max-width: 362px;
+}
+
+.slogan h1 {
+  font-size: 48px;
+  margin: 0 0 30px 0;
+}
+
+.slogan span {
+  font-size: 48px;
+  font-weight: 900;
+  background: linear-gradient(-45deg, #ff3f78 20%, #fcb045 68%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.slogan h5 {
+  max-width: 275px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.benefits {
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+}
+
+.benefits__inner {
+  margin: 0 0 61px 0;
+  text-align: right;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 31px;
+  grid-row-gap: 30px;
+}
+
+.benefits h2 {
+  margin: 0 0 40px 0;
+  font-size: 18px;
+  text-align: right;
+}
+
+.benefits span {
+  text-transform: uppercase;
+  background: var(
+    --gradient,
+    linear-gradient(90deg, #fcb045 36.99%, #fd1d1d 100%)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 700;
+}
+
+.benefits__item h3 {
+  letter-spacing: 1px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.item__subtitle {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+}
+
+.button {
+  display: block;
+  padding: 21px 35px;
+  background-color: #4077f3;
+  border: none;
+  color: #e4e5ea;
+  align-self: flex-end;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.item__icon {
+  display: none;
+}
+
+/*----------------media------------------------*/
+
+@media (max-width: 750px) {
+  .mainInfo__inner {
+    flex-direction: column;
+    padding: 90px 15px 45px 15px;
+  }
+  .slogan {
+    padding: 0 0 45px 0;
+  }
+  .benefits h2 {
+    text-align: left;
+  }
+  .benefits__item h3 {
+    text-align: left;
+  }
+  .item__subtitle {
+    display: none;
+  }
+  .item__title1,
+  .item__title2,
+  .item__title3,
+  .item__title4 {
+    visibility: hidden;
+    position: relative;
+  }
+  .item__title1::after {
+    content: "Skype аудит";
+    visibility: visible;
+    display: block;
+    position: absolute;
+    top: 0;
+  }
+  .item__title2::after {
+    content: "30 виджетов";
+    visibility: visible;
+    display: block;
+    position: absolute;
+    top: 0;
+  }
+  .item__title3::after {
+    content: "Dashboard";
+    visibility: visible;
+    display: block;
+    position: absolute;
+    top: 0;
+  }
+  .item__title4::after {
+    content: "Месяц аmoCRM";
+    visibility: visible;
+    display: block;
+    position: absolute;
+    top: 0;
+  }
+  .item__icon {
+    display: block;
+    margin: 0 5px 0 0;
+    transform: translate(0, 45%);
+  }
+  .benefits {
+    max-width: 100%;
+  }
+  .benefits__inner {
+    grid-row-gap: 15px;
+  }
+  .benefits h2 {
+    margin: 0 0 30px 0;
+    max-width: 272px;
+  }
+  .benefits__item {
+    display: flex;
+    align-items: center;
+  }
+  .benefits__item h3 {
+    width: 100%;
+  }
+  .button {
+    align-self: flex-start;
+  }
+}
+
+@media (max-width: 420px) {
+  .slogan {
+    max-width: 272px;
+  }
+  .slogan h1 {
+    font-size: 36px;
+    font-weight: 400;
+    margin: 0 0 15px 0;
+  }
+  .inner__title span {
+    font-size: 36px;
+  }
+  .benefits h2 {
+    margin: 0 0 20px 0;
+  }
+  .benefits__item h3 {
+    font-size: 13px;
+    font-weight: 400;
+  }
+  .benefits__inner {
+    grid-row-gap: 14px;
+    grid-column-gap: 10px;
+    grid-template-columns: 115px auto;
+    margin: 0;
+  }
+  .button {
+    display: none;
+  }
+  .mainInfo__inner {
+    padding-bottom: 55px;
+  }
+}
+
+@media (max-width: 420px) {
+  .mainInfo__inner {
+    background: url("/public/bg.png");
+    background-size: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+}

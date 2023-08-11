@@ -1,0 +1,42 @@
+.redLight {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.redBall {
+  position: absolute;
+  top: 70px;
+  left: 36.5%;
+  z-index: -1;
+}
+
+.redBallSmall {
+  position: absolute;
+  top: 50.5%;
+  left: 60.8%;
+  z-index: -1;
+}
+
+.purpleLight {
+  position: absolute;
+  top: 0;
+  left: 15%;
+  z-index: -2;
+}
+
+.purpleBall {
+  position: absolute;
+  top: 0;
+  left: 58.6%;
+  z-index: -1;
+}
+
+/*----------------media------------------------*/
+
+@media (max-width: 320px) {
+  .decor__inner {
+    display: none;
+  }
+}

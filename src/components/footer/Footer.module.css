@@ -1,0 +1,36 @@
+.footer {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0 15px 20px 15px;
+}
+
+.footer__inner {
+  max-width: 240px;
+  text-align: right;
+}
+
+.footer__inner p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  margin: 0 0 5px 0;
+}
+
+.footer__inner a {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  text-decoration: underline;
+}
+
+/*----------------media------------------------*/
+
+@media (max-width: 1000px) {
+  .footer {
+    justify-content: flex-start;
+    padding: 0 15px 60px 15px;
+  }
+  .footer__inner {
+    text-align: left;
+  }
+}
