@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/React-page-WELBEX/static/css/main.b07e30d2.css",
+    "main.js": "/React-page-WELBEX/static/js/main.96e17da6.js",
+    "static/media/bg.png": "/React-page-WELBEX/static/media/bg.c4af791f505455363aed.png",
+    "index.html": "/React-page-WELBEX/index.html",
+    "main.b07e30d2.css.map": "/React-page-WELBEX/static/css/main.b07e30d2.css.map",
+    "main.96e17da6.js.map": "/React-page-WELBEX/static/js/main.96e17da6.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b07e30d2.css",
+    "static/js/main.96e17da6.js"
+  ]
+}
