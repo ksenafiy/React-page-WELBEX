@@ -1,4 +1,7 @@
 import styles from './Navigation.module.css'
+import telegram from '../../icons/telegram.svg'
+import viber from '../../icons/viber.svg'
+import whatsapp from '../../icons/whatsapp.svg'
 
 const Navigation = () => {
     return (
@@ -30,13 +33,13 @@ const Navigation = () => {
                     <a className={styles.phone} href="/">+7 555 555-55-55</a>
                     <div className={styles.navigation__icons}>
                         <a href="/">
-                            <img src="../icons/telegram.svg" alt="telegram" />
+                            <img src={telegram} alt="telegram" />
                         </a>
                         <a href="/">
-                            <img src="../icons/viber.svg" alt="telegram" />
+                            <img src={viber} alt="telegram" />
                         </a>
                         <a href="/">
-                            <img src="../icons/whatsapp.svg" alt="telegram" />
+                            <img src={whatsapp} alt="telegram" />
                         </a>
                     </div>
                     <a className={styles.item__link} href="/">Москва, Путевой проезд 3с1, к 902</a>
